@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300&display=swap");
+
+body {
+  background: black;
+}
+.header {
+  background: black;
+  position: relative;
+  z-index: 195;
+}
+.fitness_withme::before {
+  background: url(../picture/css_sprites.png);
+}
+.logo_lg h1,
+.my_navbar h1 {
+  color: white;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  margin: 0;
+}
+.logo {
+  padding-left: 0;
+  padding-right: 0;
+}
+.button_navbar span > span,
+.button_navbar span > span::before,
+.button_navbar span > span::after,
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background: rgb(175, 28, 26);
+}
+.button_navbar {
+  padding: 0;
+  text-align: right;
+}
+.button_navbar:focus {
+  outline: none;
+}
+.menu_navbar li {
+  text-align: right;
+}
+.menu_navbar li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+.menu_navbar {
+  background: transparent;
+  padding: 0;
+}
+.wrap_menunavbar {
+  padding: 0;
+}
+.subscription h3 {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 1.2;
+}
+.sign_up {
+  background: #af1c1a;
+  text-align: center;
+  display: inline-block;
+  padding: 14px 27px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  font-family: "Roboto", sans-serif;
+}
+.sign_up:hover {
+  text-decoration: none;
+  color: white;
+}
+.wrap_menunavbar {
+  margin-top: 10px;
+}
+.header_lg {
+  background: black;
+}
+.headerlg_container {
+  background: url(../picture/man_and_woman.png);
+  background-size: cover;
+  min-height: 416px;
+}
+.headerlg_container {
+  padding-top: 25px;
+}
+.content_headerlg {
+  margin-top: 140px;
+}
+.fitness_withme h2 {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 0.9;
+  position: relative;
+  z-index: 5;
+}
+.fitness_withme h2 + h2 {
+  font-size: 25px;
+  font-weight: lighter;
+  font-family: "Roboto", sans-serif;
+}
+.subscription_lg h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+  line-height: 1.2;
+}
+.subscription_lg a {
+  margin-top: 18px;
+}
+.fitness_withme {
+  position: relative;
+}
+.fitness_withme::before {
+  content: "";
+  position: absolute;
+  top: -101px;
+  left: -83px;
+  width: 383px;
+  height: 325px;
+  background-position: -10px -10px;
+  transform: scale(0.7);
+}
+.red_line {
+  height: 14px;
+  background: rgb(175, 28, 26);
+  transform: rotate(174deg) skewX(174deg);
+  position: relative;
+  top: -49px;
+  z-index: 200;
+  box-shadow: 0 -6px 20px 3px black;
+}
+.red_line::before {
+  content: "";
+  display: block;
+  background: linear-gradient(30deg, transparent 74%, #af1c1a 74%);
+  height: 34px;
+  position: relative;
+  top: 13px;
+  left: 0;
+}
+.red_line::after {
+  content: "";
+  display: block;
+  background: linear-gradient(30deg, #af1c1a 72%, transparent 72%);
+  height: 10px;
+  position: relative;
+  top: -11px;
+}
+.about_us {
+  background: linear-gradient(to right, rgb(30 24 25) 10%, rgb(11 8 9) 85%);
+}
+.about_us .container {
+  padding-top: 10px;
+}
+.about_us .container h2,
+.cont_gallery > h2 {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+.big_pictures {
+  max-width: 100%;
+}
+.sm_pictures img {
+  width: 100%;
+}
+.text_aboutus h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+.text_aboutus p {
+  color: white;
+  font-weight: lighter;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.gallery {
+  background: linear-gradient(
+    to right bottom,
+    rgb(174 28 26) 30%,
+    rgb(147 24 22) 90%
+  );
+  position: relative;
+}
+.cont_gallery .owl-carousel {
+  width: 100%;
+}
+.gallery_slider img {
+  width: 100%;
+}
+.gallery_slider .owl-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+.gallery_slider .owl-dot {
+  padding: 0 10px;
+  margin: 10px;
+}
+.gallery_slider .item {
+  margin: 0 auto;
+}
+.gallery_slider .owl-dots .dotnumber1 {
+  display: none;
+}
+.gallery_slider .owl-dots button img {
+  width: 100%;
+}
+.gallery_slider .owl-dots button {
+  width: inherit;
+  margin-top: 0;
+}
+.gallery_slider .owl-dots button:focus {
+  outline: none;
+}
+@media screen and (max-width: 992px) {
+  .menu_navbar li + li a {
+    margin-right: 10px;
+  }
+  .menu_navbar li + li + li a {
+    margin-right: 30px;
+  }
+  .menu_navbar li + li + li + li a {
+    margin-right: 40px;
+  }
+  .menu_navbar li + li + li + li + li a {
+    margin-right: 50px;
+  }
+  .menu_navbar li + li + li + li + li + li a {
+    margin-right: 60px;
+  }
+  .logo_lg {
+    display: none;
+  }
+  .header {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 400;
+  }
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (min-width: 576px) {
+  .gallery_slider .owl-dots {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about_us {
+    transform: rotate(354deg) skewX(354deg);
+    margin-top: -47px;
+    padding-bottom: 600px;
+  }
+  .about_us .container {
+    transform: rotate(6deg) skewX(6deg);
+  }
+  .about_us .container {
+    padding-top: 60px;
+  }
+  .about_us .container h2 {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin: 0;
+  }
+  .gallery_slider .item {
+    width: 730px;
+    height: 375px;
+  }
+  .gallery_slider .item img {
+    transform: translateY(-46px);
+  }
+  .gallery_slider .item .bad_picture {
+    transform: translateY(0px);
+  }
+  .gallery_slider .owl-dots button img {
+    width: 160px;
+    height: 105px;
+  }
+  .gallery_slider .owl-dots {
+    margin-top: 15px;
+  }
+  .gallery {
+    transform: skew(0deg, 8deg);
+    margin-top: -630px;
+  }
+  .cont_gallery {
+    transform: skew(0deg, 172deg);
+  }
+  .background_red {
+    background: linear-gradient(
+      to right,
+      rgb(174 28 26) 70%,
+      rgb(168 24 22) 90%
+    );
+    margin-top: -77px;
+    transform: skew(0deg, 14deg);
+    padding-top: 142px;
+  }
+  .about_us .container {
+    position: relative;
+    z-index: 10;
+  }
+}
+@media screen and (min-width: 992px) {
+  .fitness_withme::before {
+    top: -94px;
+    left: -68px;
+    transform: scale(0.9);
+  }
+  .header {
+    background: linear-gradient(to right, rgb(30 24 25) 10%, rgb(11 8 9) 85%);
+    transform: rotate(354deg) skewX(354deg);
+    margin-top: -84px;
+  }
+  .cont_header {
+    transform: rotate(6deg) skewX(6deg);
+  }
+  .wrap_collapse {
+    justify-content: flex-end !important;
+  }
+  .wrap_menunavbar {
+    margin-top: 10px;
+  }
+  .headerlg_container {
+    min-height: 555px;
+  }
+  .headerlg_container {
+    padding-top: 25px;
+  }
+  .content_headerlg {
+    margin-top: 140px;
+  }
+  .subscription_lg a {
+    margin-top: 18px;
+  }
+  .red_line {
+    height: 20px;
+    top: -67px;
+  }
+  .red_line::before {
+    height: 40px;
+    top: 19px;
+    background: linear-gradient(30deg, transparent 76%, #af1c1a 76%);
+  }
+  .red_line::after {
+    height: 16px;
+    top: -9px;
+    background: linear-gradient(30deg, #af1c1a 74%, transparent 74%);
+  }
+  .fitness_withme h2 {
+    font-size: 72px;
+  }
+  .fitness_withme h2 + h2 {
+    font-size: 30px;
+  }
+  .subscription_lg h3 {
+    font-size: 30px;
+  }
+
+  .about_us .container {
+    padding-top: 120px;
+  }
+  .gallery_slider .owl-dots {
+    margin-top: 20px;
+  }
+  .background_red {
+    padding-top: 115px;
+  }
+  .gallery_slider{
+    order: 0;
+  }
+  .cont_gallery h2 {
+    writing-mode: vertical-rl;
+    order: 5;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .headerlg_container {
+    padding-top: 35px;
+  }
+  .content_headerlg {
+    margin-top: 180px;
+  }
+  .subscription_lg a {
+    margin-top: 25px;
+  }
+  .fitness_withme::before {
+    top: -92px;
+    left: -55px;
+    transform: scale(1);
+  }
+  .headerlg_container {
+    padding-top: 25px;
+    min-height: 654px;
+  }
+  .red_line {
+    height: 29px;
+    top: -74px;
+  }
+  .red_line::before {
+    height: 55px;
+    top: 28px;
+    background: linear-gradient(30deg, transparent 74%, #af1c1a 74%);
+  }
+  .red_line::after {
+    height: 24px;
+    top: -9px;
+    background: linear-gradient(30deg, #af1c1a 72%, transparent 72%);
+  }
+  .header {
+    margin-top: -75px;
+  }
+  .about_us .container {
+    padding-top: 158px;
+  }
+  .gallery_slider .owl-dots {
+    margin-top: 30px;
+  }
+  .background_red {
+    margin-top: -29px;
+  }
+}
