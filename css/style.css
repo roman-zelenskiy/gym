@@ -179,6 +179,9 @@ body {
   font-size: 30px;
   text-align: center;
 }
+.cont_gallery h2{
+  padding-top: 10px;
+}
 .big_pictures {
   max-width: 100%;
 }
@@ -237,6 +240,37 @@ body {
 .gallery_slider .owl-dots button:focus {
   outline: none;
 }
+.gallery_slider{
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+}
+.cont_gallery .gallery_slider .owl-nav{
+  display: none;
+}
+.cont_gallery .gallery_slider .owl-nav button:first-child{
+  width: 43px;
+  height: 43px;
+  border: 1px solid white;
+}
+.cont_gallery .gallery_slider .owl-nav button+button{
+  width: 43px;
+  height: 43px;
+  border: 1px solid white;
+}
+.cont_gallery .gallery_slider .owl-nav button span{
+  font-size:50px ;
+  line-height: 0.5;
+  color: white;
+}
+.cont_gallery .gallery_slider .owl-nav button:focus{
+outline: none;
+}
+
+
+
+
+
 @media screen and (max-width: 992px) {
   .menu_navbar li + li a {
     margin-right: 10px;
@@ -307,7 +341,14 @@ body {
   }
   .gallery {
     transform: skew(0deg, 8deg);
-    margin-top: -630px;
+    margin-top: -637px;
+    background: linear-gradient(
+      to right bottom,
+      rgb(174 28 26) 30%,
+      rgb(147 24 22) 90%
+    ),white;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0, 2px 2px 2px 2px;
   }
   .cont_gallery {
     transform: skew(0deg, 172deg);
@@ -325,6 +366,9 @@ body {
   .about_us .container {
     position: relative;
     z-index: 10;
+  }
+  .cont_gallery h2{
+    padding-top: 0px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -393,11 +437,34 @@ body {
     padding-top: 115px;
   }
   .gallery_slider{
-    order: 0;
+    order: 2;
   }
   .cont_gallery h2 {
     writing-mode: vertical-rl;
     order: 5;
+    margin: 0;
+    padding: 0;
+  }
+  .cont_gallery .gallery_slider .owl-nav{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    justify-content: space-between;
+    left: 0;
+    top: 187px;
+    margin-top: -22px;
+  }
+  .cont_gallery .gallery_slider .owl-nav button:first-child{
+    margin-left: -30px;
+  }
+  .cont_gallery .gallery_slider .owl-nav button+button{
+    margin-right: -30px;
+  }
+  .gallery_slider .empty_block{
+    order: 1;
+  }
+  .gallery{
+    padding-top: 46px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -444,5 +511,14 @@ body {
   }
   .background_red {
     margin-top: -29px;
+  }
+  .cont_gallery .gallery_slider .owl-nav button:first-child{
+    margin-left: -69px;
+  }
+  .cont_gallery .gallery_slider .owl-nav button+button{
+    margin-right: -69px;
+  }
+  .gallery{
+    padding-top: 74px;
   }
 }
